@@ -16,7 +16,8 @@ module.exports = {
     });
     WebAPIUtils.signup(email, username, password, passwordConfirmation);
   },
-
+  //creates a new ViewAction, attaches a payload with user's email 
+  //and password and calls WebAPIUtils.login
   login: function(email, password) {
     SmallAppDispatcher.handleViewAction({
       type: ActionTypes.LOGIN_REQUEST,

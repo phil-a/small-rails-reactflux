@@ -2,6 +2,8 @@ var keyMirror = require('keymirror');
 
 var APIRoot = "http://localhost:3000";
 
+// This utility file holds all constants used throughout the project
+// Specifically the API endpoint and types of actions that we can perform
 module.exports = {
 
   APIEndpoints: {
